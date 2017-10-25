@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/large"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Illustration de fragments statiques -->
+
+    <!-- Fragment de gauche: la liste des articles -->
+
+    s<fragment class="com.example.fragmentintro.ArticleListFragment"
+    android:id="@+id/list"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent" />
+
+    <!-- Fragment de droite: le texte de l'article selectionné -->
+    <fragment android:name="com.example.fragmentintro.ArticleReaderFragment"
+        android:id="@+id/viewer"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
